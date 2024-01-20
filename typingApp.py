@@ -1,8 +1,5 @@
-#typing speed application
-
 from tkinter import *
 import time
-#from statistics import mean
 from tkinter.messagebox import showinfo
 from random import choice
 
@@ -22,8 +19,8 @@ class TypeSpeed(Frame):
         self.textbox=Text(master,width=50,height=25) #text box
         self.textbox.pack(fill=BOTH,expand=True) #text box should fill & expand
 
-        self.textbox.bind("<KeyPress>",self.begin) #self.begin() is called upon a key bieng pressed inside text box
-        self.wordbegan=False #whether this is the start of a word
+        self.textbox.bind("<KeyPress>",self.begin) #self.begin() is called upon a key being pressed inside text box
+        self.wordbegan=False 
         self.start_time,self.end_time=0,0
         self.wpms=set() #set of wpms
         self.avgtimetaken=0
